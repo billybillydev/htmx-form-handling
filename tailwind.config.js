@@ -7,7 +7,7 @@ import { fontSize } from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./src/**/*.{astro,html,js,jsx,mdx,svelte,ts,tsx,vue}"],
+	content: ["./src/**/*.{jsx,tsx}"],
 	darkMode: "selector",
 	safelist: [{ pattern: /(size)-./ }],
 	theme: {
