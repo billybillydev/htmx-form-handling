@@ -1,5 +1,6 @@
 import { AppConfig } from "$config";
 import { homeController } from "$controllers/home.controller";
+import { newsletterController } from "$controllers/newsletter.controller";
 import { htmxMiddleware } from "$middlewares/htmx.middleware";
 import { Page } from "$ui/components/page.component";
 import { Hono } from "hono";
@@ -18,6 +19,7 @@ app
     await next();
   })
   .route("/", homeController)
+  .route("/newsletter", newsletterController)
   .notFound((c) => {
     return c.html(
       <Page seo={{ title: "404" }}>
