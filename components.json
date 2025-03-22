@@ -1,0 +1,25 @@
+{
+  "$schema": "https://jsxpine.com/public/schema.json",
+  "tailwind": {
+    "config": "tailwind.config.js",
+    "css": "src/styles/index.css",
+    "baseColor": "slate"
+  },
+  "aliases": {
+    "common": "src/ui/common",
+    "components": "src/ui/components",
+    "scripts": "src/ui/scripts",
+    "alpine": "src/ui/scripts/alpine"
+  },
+  "resolvedPaths": {
+    "tailwindConfig": "/Users/billybillydev/bun/hono/htmx-form-handling/tailwind.config.js",
+    "tailwindCss": "/Users/billybillydev/bun/hono/htmx-form-handling/src/styles/index.css",
+    "scripts": "/Users/billybillydev/bun/hono/htmx-form-handling/src/ui/scripts",
+    "alpine": "/Users/billybillydev/bun/hono/htmx-form-handling/src/ui/scripts/alpine",
+    "components": "/Users/billybillydev/bun/hono/htmx-form-handling/src/ui/components",
+    "common": "/Users/billybillydev/bun/hono/htmx-form-handling/src/ui/common"
+  },
+  "tsConfigAliases": {
+    "global": "$ui"
+  }
+}

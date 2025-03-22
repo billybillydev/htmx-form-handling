@@ -1,0 +1,31 @@
+{
+  "name": "htmx-form-handling",
+  "scripts": {
+    "dev": "bun run --hot src/index.tsx",
+    "tailwind:dev": "bun tailwindcss -i src/styles/index.css -o ./public/styles/index.css --watch",
+    "tailwind:prod": "bun tailwindcss -i src/styles/index.css -o ./public/styles/index.css",
+    "build:watch": "bun esbuild --bundle --minify src/ui/scripts/app.js --outfile=./public/script/app.js --watch",
+    "build:prod": "bun esbuild --bundle --minify src/ui/scripts/app.js --outfile=./public/script/app.js",
+    "start:dev": "concurrently \"bun dev\" \"bun tailwind:dev\" \"bun build:watch\"",
+    "jsx:test": "xss-scan"
+  },
+  "dependencies": {
+    "@alpinejs/collapse": "^3.14.9",
+    "@alpinejs/focus": "^3.14.9",
+    "@iconify-json/ri": "^1.2.5",
+    "@iconify/utils": "^2.3.0",
+    "@kitajs/html": "^4.2.7",
+    "alpinejs": "^3.14.9",
+    "alpinejs-manage": "^1.0.4",
+    "clsx": "^2.1.1",
+    "hono": "^4.7.5"
+  },
+  "devDependencies": {
+    "@kitajs/ts-html-plugin": "^4.1.1",
+    "@types/alpinejs": "^3.13.11",
+    "@types/bun": "latest",
+    "concurrently": "^9.1.2",
+    "esbuild": "^0.25.1",
+    "tailwindcss": "3.4.17"
+  }
+}

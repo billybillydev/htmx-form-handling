@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@kitajs/html",
+    "baseUrl": "./",
+    "rootDir": "./",
+    "paths": {
+      "$ui": [
+        "src/ui"
+      ],
+      "$ui/*": [
+        "src/ui/*"
+      ]
+    },
+    "target": "esnext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowJs": true,
+    "checkJs": true,
+    "types": [
+      "@kitajs/html/htmx.d.ts",
+      "@kitajs/html/alpine.d.ts"
+    ]
+  }
+}
