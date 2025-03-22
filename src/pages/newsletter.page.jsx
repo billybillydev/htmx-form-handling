@@ -10,7 +10,9 @@ export function NewsletterPage({ description, seo, ...restProps }) {
     <LayoutView seo={seo} {...restProps} class={"flex flex-col gap-y-8"}>
       <h1>{seo.title}</h1>
       <p>{description}</p>
-      <NewsletterForm />
+      <div class={"flex items-center justify-center"}>
+        <NewsletterForm />
+      </div>
     </LayoutView>
   );
 }
